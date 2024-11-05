@@ -1,1 +1,22 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>Treasure Share Calculator</h1>
+    <label for="playerNum"></label><input type="number" id="playerNum" placeholder="Please Enter the Total Number of Players">
+    <label for="retainerNum"></label><input type="number" id="retainerNum" placeholder="Please Enter the Total Number of Retainers">
+    <label for="totalTreasure"></label><input type="number" id="totalTreasure" placeholder="Please Enter the Total Treasure">
+
+    <button onclick="calculate()">Calculate</button>
+    <h2 id="result"></h2>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
