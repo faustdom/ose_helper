@@ -44,11 +44,16 @@ function splitShares(totalShares, totalTreasure, playerNum, retainerNum) {
 
     // Check for leftover copper pieces if there's any discrepancy
     const totalDistributedTreasure = (playerNum * parseFloat(playerShares)) + (retainerNum * parseFloat(retainerShares));
-    if (totalDistributedTreasure !== totalTreasure) {
-        const copperDiff = ((totalTreasure - totalDistributedTreasure) * 100).toFixed(0); // Calculate leftover copper
-        shares += `There are ${copperDiff} Copper Pieces leftover\n`;
+    const copperDiff = totalTreasure - totalDistributedTreasure;
+
+    if (copperDiff > 0) {
+        const copperPieces = Math.round(copperDiff * 100); // Round to nearest copper piece
+        shares += `There are ${copperPieces} Copper Pieces leftover\n`;
+    } else {
+        shares += `There are no Copper Pieces leftover\n`;
     }
 
     return shares;
 }
+
 
