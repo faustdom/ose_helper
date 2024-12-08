@@ -7,7 +7,7 @@ function calculate() {
     if (isNaN(playerNum) || isNaN(retainerNum)) {
         result = "Please enter valid numbers.";
     } else {
-        let retShares =  calcRetainerShares(retainerNum);
+        let retShares = calcRetainerShares(retainerNum);
         let totalShares = calcTotalShares(playerNum, retShares);
         result = splitShares(totalShares, totalTreasure, playerNum, retainerNum);
     }
@@ -15,11 +15,11 @@ function calculate() {
     document.getElementById('result').innerText = `${result}`;
 }
 
-function calcRetainerShares(retNum){
-   return retNum / 2.0;
+function calcRetainerShares(retNum) {
+    return retNum / 2.0;
 }
 
-function calcTotalShares(retNum, playerNum){
+function calcTotalShares(retNum, playerNum) {
     return retNum + playerNum;
 }
 
@@ -28,15 +28,15 @@ function splitShares(totalShares, totalTreasure, playerNum, retainerNum) {
     function calculateShares(shares) {
         const gold = Math.floor(shares); // Whole number (gold pieces)
         const silver = Math.round((shares - gold) * 100); // Decimal part (silver pieces)
-        return { gold, silver };
+        return {gold, silver};
     }
 
     // Calculate player and retainer shares
     const playerShares = (totalTreasure / totalShares).toFixed(2);
-    const { gold: playerGoldPieces, silver: playerSilverPieces } = calculateShares(parseFloat(playerShares));
+    const {gold: playerGoldPieces, silver: playerSilverPieces} = calculateShares(parseFloat(playerShares));
 
     const retainerShares = (parseFloat(playerShares) / 2).toFixed(2);
-    const { gold: retGoldPieces, silver: retSilverPieces } = calculateShares(parseFloat(retainerShares));
+    const {gold: retGoldPieces, silver: retSilverPieces} = calculateShares(parseFloat(retainerShares));
 
     // Prepare the output
     let shares = `The players each get ${playerGoldPieces} Gold Pieces and ${playerSilverPieces} Silver Pieces\n`;

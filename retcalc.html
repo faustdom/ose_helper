@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Share Calculator</title>
+    <link rel="stylesheet" href="retcalcstyles.css">
+</head>
+
+<body>
+<header>
+    <a href="index.html">Home</a>
+</header>
+<div class="container">
+    <div class="box">
+        <h1>Treasure Share Calculator</h1>
+        <label for="playerNum"></label><input type="number" id="playerNum" placeholder="Please Enter the Total Number of Players">
+        <label for="retainerNum"></label><input type="number" id="retainerNum" placeholder="Please Enter the Total Number of Retainers">
+        <label for="totalTreasure"></label><input type="number" id="totalTreasure" placeholder="Please Enter the Total Treasure">
+
+        <button onclick="calculate()">Calculate</button>
+        <h2 id="result"></h2>
+    </div>
+</div>
+<script src="retcalc.js"></script>
+
+<footer id="footer-placeholder"></footer>
+<script src="footer.js"></script>
+</body>
+</html>
