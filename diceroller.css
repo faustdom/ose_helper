@@ -1,0 +1,92 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content horizontally */
+    height: 100vh;
+}
+
+/* Header Styling (Full-Width) */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    width: 100vw; /* Ensures full viewport width */
+    position: relative;
+    left: 0;
+    margin: 0;
+}
+
+/* Footer Styling (Older Version) */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: static;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom naturally */
+    border-top: 1px solid #444;
+}
+
+/* Container Styling */
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column; /* Ensures elements are stacked vertically */
+    align-items: center; /* Centers content horizontally */
+    margin-top: 20px; /* Adds spacing below the header */
+    width: 100%; /* Ensures the container spans the width */
+    max-width: 600px; /* Adds a max-width for better layout on large screens */
+}
+
+/* Paragraphs Styling */
+.paragraph1, .paragraph2 {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0; /* Adds vertical spacing */
+    font-size: 1em;
+}
+
+.paragraph1 {
+    margin-top: 0; /* Adjusts spacing for the first paragraph */
+}
+
+.paragraph2 {
+    margin-top: 10px; /* Adds space below the first paragraph */
+}
+
+/* Button Styling */
+button {
+    font-size: 1.2em; /* Adjust font size for readability */
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px; /* Adds spacing between buttons */
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555; /* Slightly lighter shade on hover */
+}
+
+/* Result Section Styling */
+#result {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
