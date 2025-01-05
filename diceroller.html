@@ -2,12 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Dice Roller</title>
+    <link href="diceroller.css" rel="stylesheet">
 </head>
+
+<body>
 <header>
     <a href="index.html">Home</a>
 </header>
-<body>
-<label>This page has not yet been implemented</label>
+<div class="container">
+    <p>
+        <label for="diceCount">
+            Number of dice to roll:
+            <input id="diceCount" type="number" min="1" value="1">
+        </label>
+    </p>
+    <p>
+        <button data-roll="d4">D4</button>
+        <button data-roll="d6">D6</button>
+        <button data-roll="d8">D8</button>
+        <button data-roll="d10">D10</button>
+        <button data-roll="d12">D12</button>
+        <button data-roll="d20">D20</button>
+        <button data-roll="d100">D100</button>
+    </p>
+</div>
+
+<div aria-live="polite" id="result"></div>
+<script src="diceroller.js"></script>
+
+<footer id="footer-placeholder"></footer>
+<script src="footer.js"></script>
 </body>
 </html>
