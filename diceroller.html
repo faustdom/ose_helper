@@ -28,11 +28,13 @@
         <button data-roll="d100">D100</button>
         <button data-roll="stats">Stats</button>
         <button data-roll="gold">Gold</button>
+        <button id="checkViableBtn" style="display: none;">Check Viable Characters</button>
     </p>
 </div>
 
 <div aria-live="polite" id="result"></div>
 <div aria-live="polite" id="sum"></div>
+<div aria-live="polite" id="viableResults" style="white-space: pre-wrap; font-family: monospace; margin: 1em 0; display: none;"></div>
 <script src="diceroller.js"></script>
 
 <footer id="footer-placeholder"></footer>
