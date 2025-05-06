@@ -48,7 +48,7 @@ const displayResults = (rolls) => {
 
 // Roll 6 sets of 3d6 for character stats
 const rollStats = () => {
-    const labels = ['STR', 'DEX', 'CON', 'INT', 'WIS', 'CHA'];
+    const labels = ['STR', 'INT', 'WIS', 'DEX', 'CON', 'CHA'];
     const allStats = Array.from({ length: 6 }, () => rollMultipleDice('d6', 3));
 
     const lines = allStats.map((roll, index) => {
