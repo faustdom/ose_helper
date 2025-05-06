@@ -85,8 +85,16 @@ button:hover {
 
 /* Result Section Styling */
 #result {
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     margin: 20px 0;
+    white-space: pre-wrap;
+    font-family: monospace;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
 }
